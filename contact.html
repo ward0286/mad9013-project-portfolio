@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Silkscreen&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <a href="./index.html" class="navbar__title">Ayden Slade</a>
+
+        <nav class="navbar__nav">
+          <ul class="navbar__list">
+            <li><a class="navbar__link" href="./index.html">Home</a></li>
+            <li>
+              <a class="navbar__link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li><a class="navbar__link" href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="contact">
+      <div class="container">
+        <div class="contact__wrap">
+          <form
+            action="https://formspree.io/f/xbjnrlrr"
+            method="POST"
+            class="contact__form"
+          >
+            <div class="form-unit full">
+              <h1 class="contact__title">Contact Me</h1>
+            </div>
+
+            <div class="form-unit full">
+              <label for="fullName">Full Name*</label>
+              <input type="text" id="fullName" name="fullName" required />
+            </div>
+
+            <div class="form-unit">
+              <label for="email">Email*</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-unit">
+              <label for="tel">Phone*</label>
+              <input type="tel" id="tel" name="tel" required />
+            </div>
+
+            <div class="form-unit full">
+              <label for="subject">Subject*</label>
+              <input id="subject" name="subject" required />
+            </div>
+
+            <div class="form-unit full">
+              <label for="message">Message*</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <div class="form-unit full">
+              <input class="btn" type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <a href="./index.html" class="navbar__title">Ayden Slade</a>
+
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li><a class="footer__link" href="./index.html">Home</a></li>
+            <li>
+              <a class="footer__link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li><a class="footer__link" href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__legal">
+          <small class="footer__copyright">
+            &copy; 2022 Adventure Co-Operative
+          </small>
+          <small class="footer__privacy"> Privacy Policy </small>
+          <small class="footer__terms"> Terms of Service </small>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
