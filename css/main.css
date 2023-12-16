@@ -249,13 +249,14 @@ select {
 }
 
 .banner__portfolio .container {
-  min-height: 60vh;
+  min-height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
   flex-direction: column;
+  width: min(65em, 100%);
 }
 
 .banner__title {
@@ -328,7 +329,7 @@ select {
 .card__image {
   display: block;
   width: 100%;
-  /* aspect-ratio: 1/1; */
+  /* aspect-ratio: 1.2/1.1; */
   object-fit: cover;
 }
 
@@ -462,6 +463,50 @@ input:valid {
 input:invalid {
   border-color: #d96666;
 }
+
+/* .click-to-close {
+  width: 100vw;
+  height: 100vh;
+  background-color: #0008;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+
+  transition: opacity 0.2s;
+}
+
+.click-to-close.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.to-top {
+  position: fixed;
+  bottom: -0.5rem;
+  right: 1.5rem;
+  background-color: black;
+  color: #000;
+  padding: 0.5rem 0.5rem 1rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  text-decoration: none;
+  box-shadow: 0 0 0.5rem #0002;
+  translate: 0 100%;
+
+  transition: translate 0.2s, bottom 0.2s;
+}
+
+.to-top.visible {
+  translate: 0;
+}
+
+.to-top:hover,
+.to-top:focus-visible {
+  bottom: 0;
+  color: #000;
+  translate: 0;
+}  */
 
 @media only screen and (min-width: 35em) {
   .navbar .container {
